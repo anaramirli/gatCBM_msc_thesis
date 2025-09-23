@@ -1,4 +1,9 @@
 # Concept-Based Explainability with Graph Attention Networks
+This repository contains the code implementation for my master’s thesis project conducted at DFKI.
+
+While Concept Bottleneck Models (CBMs) show promise for interpretable AI, they face major challenges: defining clinically meaningful concepts, expensive annotations, reliance on heatmaps, and spurious alignment between visual features and textual labels. To overcome these issues, we focus on visually grounded concepts and avoid text supervision. Unlike prior visually grounded approaches that provide only global, class-specific, post-hoc explanations, our framework (a) discovers concepts via Non-negative Matrix Factorisation (NMF) and (b) captures their interactions through a shallow Graph Attention Network (GAT), balancing model expressiveness with interpretability. The proposed architecture is as follows:
+
+<img src="https://github.com/anaramirli/gatCBM_msc_thesis/blob/main/assets/thesis.png" alt="Thesis Illustration" width="600">
 
 ## Overview  
 This repository provides an **end-to-end pipeline** for interpretable image classification using **visually grounded concepts**.  
@@ -26,14 +31,20 @@ python explain_image.py \
 
 - `<datasetname>` can be one of ph2, derm7pt, imagenet, and ham10000.
 
-- example visual explanations can be found at `/assets` folder
+- Example visual explanations can be found at `/assets` folder
+
+#### Example visual explanations for a medical image:
+![Explanation 2](https://github.com/anaramirli/gatCBM_msc_thesis/blob/main/assets/output_explanation_2.png)
+
+#### Example visual explanations for a general image:
+![Explanation 1](https://github.com/anaramirli/gatCBM_msc_thesis/blob/main/assets/output_explanation.png)
 
 ## Setting up Environment
 
 ```bash
 # create env (Python 3.10.x)
-conda create -n your_env python=3.10.16 -y
-conda activate your_env
+conda create -n <env> python=3.10.16 -y
+conda activate <env>
 
 # install deps
 pip install -r requirements.txt
@@ -51,14 +62,20 @@ pip install -r requirements.txt
 +--- results
 ``` 
 
-- `datasets` — stores the available datasets.
-- `concept_graph_data` — stores the trained GAT model and the fitted CRAFT NMF components.
+- `datasets` — stores the available datasets, currently includes CSV files for train, test, validation, and nmf splits.
+- `concept_graph_data` — currently stores the trained GAT model and the fitted CRAFT NMF components (enough for directly running explain_image.py). Graph datasets need to be created from the dataset splits.
 - `results` — stores the outputs from multiple runs.
 
-For more details, please refer to the **Outputs** section in  
-1) *Build Concept Basis & Graphs* and  
-2) *Train the GAT*  
-below.
+- For more details about the contents of these folders, please refer to the **Outputs** section below in  
+  1. *Build Concept Basis & Graphs* and  
+  2. *Train the GAT*  
+
+#### Reproducibility of the results
+Download the required datasets:
+- PH2: https://www.fc.up.pt/addi/ph2%20database.html
+- Derm7pt: https://derm.cs.sfu.ca/Welcome.html
+- HAM10000: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
+- ImageNet subset: `wget https://image-net.org/data/winter21_whole/<wnid>.tar` (use `n04065272` for recreational vehicle, `n02701002` for ambulance)
 
 ## File definitions
 
