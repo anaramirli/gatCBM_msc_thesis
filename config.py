@@ -60,11 +60,11 @@ def _ph2_build_transforms():
 
 def _ph2_resolve_paths():
     return {
-        "images_root": os.path.join(default_datasets_dir, "ph2dataset/ph2_dataset/trainx"),
-        "nmf_csv":   os.path.join(default_datasets_dir, "ph2dataset/ph2_dataset/PH2_all_balanced.csv"),
-        "train_csv": os.path.join(default_datasets_dir, "ph2dataset/ph2_dataset/PH2_train_balanced.csv"),
-        "val_csv":   os.path.join(default_datasets_dir, "ph2dataset/ph2_dataset/PH2_validation.csv"),
-        "test_csv":  os.path.join(default_datasets_dir, "ph2dataset/ph2_dataset/PH2_test.csv"),
+        "images_root": os.path.join(default_datasets_dir, "ph2dataset/trainx"),
+        "nmf_csv":   os.path.join(default_datasets_dir, "ph2dataset/PH2_all_balanced.csv"),
+        "train_csv": os.path.join(default_datasets_dir, "ph2dataset/PH2_train_balanced.csv"),
+        "val_csv":   os.path.join(default_datasets_dir, "ph2dataset/PH2_validation.csv"),
+        "test_csv":  os.path.join(default_datasets_dir, "ph2dataset/PH2_test.csv"),
     }
 
 def _ph2_load_split(paths, tdict, split):
@@ -85,11 +85,11 @@ def _ham_build_transforms():
 
 def _ham_resolve_paths():
     return {
-        "images_root": os.path.join(default_datasets_dir, "ham10000/2/"),
-        "nmf_csv":   os.path.join(default_datasets_dir, "ham10000/2/all_balanced.csv"),
-        "train_csv": os.path.join(default_datasets_dir, "ham10000/2/train_balanced.csv"),
-        "val_csv":   os.path.join(default_datasets_dir, "ham10000/2/validation.csv"),
-        "test_csv":  os.path.join(default_datasets_dir, "ham10000/2/test.csv"),
+        "images_root": os.path.join(default_datasets_dir, "ham10000/"),
+        "nmf_csv":   os.path.join(default_datasets_dir, "ham10000/all_balanced.csv"),
+        "train_csv": os.path.join(default_datasets_dir, "ham10000/train_balanced.csv"),
+        "val_csv":   os.path.join(default_datasets_dir, "ham10000/validation.csv"),
+        "test_csv":  os.path.join(default_datasets_dir, "ham10000/test.csv"),
     }
 
 def _ham_load_split(paths, tdict, split):
@@ -111,10 +111,10 @@ def _derm7pt_build_transforms():
 def _derm7pt_resolve_paths():
     return {
         "images_root": os.path.join(default_datasets_dir, "derm7pt/images"),
-        "nmf_csv":   os.path.join(default_datasets_dir, "derm7pt/meta/derm7pt_all_balanced.csv"),
-        "train_csv": os.path.join(default_datasets_dir, "derm7pt/meta/derm7pt_train_balanced.csv"),
-        "val_csv":   os.path.join(default_datasets_dir, "derm7pt/meta/derm7pt_validation.csv"),
-        "test_csv":  os.path.join(default_datasets_dir, "derm7pt/meta/derm7pt_test.csv"),
+        "nmf_csv":   os.path.join(default_datasets_dir, "derm7pt/derm7pt_all_balanced.csv"),
+        "train_csv": os.path.join(default_datasets_dir, "derm7pt/derm7pt_train_balanced.csv"),
+        "val_csv":   os.path.join(default_datasets_dir, "derm7pt/derm7pt_validation.csv"),
+        "test_csv":  os.path.join(default_datasets_dir, "derm7pt/derm7pt_test.csv"),
     }
 
 def _derm7pt_load_split(paths, tdict, split):
