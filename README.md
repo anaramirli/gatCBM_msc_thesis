@@ -6,7 +6,7 @@ While Concept Bottleneck Models (CBMs) show promise for interpretable AI, they f
 <img src="https://github.com/anaramirli/gatCBM_msc_thesis/blob/main/assets/thesis.png" alt="Thesis Illustration" width="600">
 
 ## Overview  
-This repository provides an **end-to-end pipeline** for interpretable image classification using **visually grounded concepts**.  
+This section provides a general overview of the repository contents.
 
 ### Main Components  
 - **Concept Discovery**: Extracts high-level concepts using *Non-negative Matrix Factorization (NMF)*.  
