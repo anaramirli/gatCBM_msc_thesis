@@ -95,13 +95,13 @@ Download the required datasets:
 Datasets and transforms are defined in `config.py`. Adjust paths if your data lives elsewhere.
 
 - **PH2**
-  - images_root: `/datasets/ph2dataset/ph2_dataset/trainx`
+  - images_root: `/datasets/ph2_dataset/trainx`
   - CSVs: `PH2_all_balanced.csv`, `PH2_train_balanced.csv`, `PH2_validation.csv`, `PH2_test.csv`
 - **HAM10000**
   - images_root: `/datasets/ham10000/`
   - CSVs: `all_balanced.csv`, `train_balanced.csv`, `validation.csv`, `test.csv`
 - **Derm7pt (7pt)**
-  - images_root: `/datasets/release_v0/images`
+  - images_root: `/datasets/derm7pt/images`
   - CSVs: `derm7pt_all_balanced.csv`, `derm7pt_train_balanced.csv`, `derm7pt_validation.csv`, `derm7pt_test.csv`
 - **ImageNet subset**
   - images_root: `/datasets/imagenet`
