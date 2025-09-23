@@ -1,0 +1,5 @@
+{
+  "best_k": 8,
+  "patch_size": 70,
+  "stride_r": 0.8
+}

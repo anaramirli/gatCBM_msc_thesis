@@ -1,0 +1,79 @@
+[
+  {
+    "Num Concepts": 6,
+    "Avg D_i": 0.809,
+    "Penalty": 0.0,
+    "Class Split": [
+      2,
+      2
+    ],
+    "Num Discriminative Concepts": 4,
+    "Score": 0.809
+  },
+  {
+    "Num Concepts": 7,
+    "Avg D_i": 0.8268,
+    "Penalty": 0.1,
+    "Class Split": [
+      3,
+      2
+    ],
+    "Num Discriminative Concepts": 5,
+    "Score": 0.7268
+  },
+  {
+    "Num Concepts": 8,
+    "Avg D_i": 0.8403,
+    "Penalty": 0.0714,
+    "Class Split": [
+      4,
+      3
+    ],
+    "Num Discriminative Concepts": 7,
+    "Score": 0.7688
+  },
+  {
+    "Num Concepts": 9,
+    "Avg D_i": 0.8462,
+    "Penalty": 0.0714,
+    "Class Split": [
+      4,
+      3
+    ],
+    "Num Discriminative Concepts": 7,
+    "Score": 0.7748
+  },
+  {
+    "Num Concepts": 10,
+    "Avg D_i": 0.8586,
+    "Penalty": 0.0,
+    "Class Split": [
+      4,
+      4
+    ],
+    "Num Discriminative Concepts": 8,
+    "Score": 0.8586
+  },
+  {
+    "Num Concepts": 12,
+    "Avg D_i": 0.8487,
+    "Penalty": 0.0455,
+    "Class Split": [
+      6,
+      5
+    ],
+    "Num Discriminative Concepts": 11,
+    "Score": 0.8032
+  },
+  {
+    "Num Concepts": 16,
+    "Avg D_i": 0.8087,
+    "Penalty": 0.0455,
+    "Class Split": [
+      5,
+      6
+    ],
+    "Num Discriminative Concepts": 11,
+    "Score": 0.7633
+  }
+]

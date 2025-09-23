@@ -1,0 +1,14 @@
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.1
+scikit-learn==1.6.1
+Pillow==11.0.0
+matplotlib==3.10.0
+torch==2.4.0
+torchvision==0.19.0
+torchaudio==2.4.0
+pytorch-lightning==2.5.0
+torchmetrics==1.6.1
+torch-geometric==2.6.1
+dgl==2.4.0+cu118
+Craft-xai==0.0.3

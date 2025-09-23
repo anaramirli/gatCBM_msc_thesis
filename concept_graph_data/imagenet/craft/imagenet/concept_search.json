@@ -1,0 +1,57 @@
+[
+  {
+    "Num Concepts": 6,
+    "Avg D_i": 0.7842,
+    "Penalty": 0.0,
+    "Class Split": [
+      2,
+      2
+    ],
+    "Num Discriminative Concepts": 4,
+    "Score": 0.7842
+  },
+  {
+    "Num Concepts": 8,
+    "Avg D_i": 0.8083,
+    "Penalty": 0.0,
+    "Class Split": [
+      2,
+      2
+    ],
+    "Num Discriminative Concepts": 4,
+    "Score": 0.8083
+  },
+  {
+    "Num Concepts": 10,
+    "Avg D_i": 0.7711,
+    "Penalty": 0.1,
+    "Class Split": [
+      2,
+      3
+    ],
+    "Num Discriminative Concepts": 5,
+    "Score": 0.6711
+  },
+  {
+    "Num Concepts": 12,
+    "Avg D_i": 0.7354,
+    "Penalty": 0.0714,
+    "Class Split": [
+      3,
+      4
+    ],
+    "Num Discriminative Concepts": 7,
+    "Score": 0.664
+  },
+  {
+    "Num Concepts": 16,
+    "Avg D_i": 0.7311,
+    "Penalty": 0.1,
+    "Class Split": [
+      4,
+      6
+    ],
+    "Num Discriminative Concepts": 10,
+    "Score": 0.6311
+  }
+]
