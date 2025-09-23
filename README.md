@@ -98,7 +98,7 @@ Datasets and transforms are defined in `config.py`. Adjust paths if your data li
   - images_root: `/datasets/ph2dataset/ph2_dataset/trainx`
   - CSVs: `PH2_all_balanced.csv`, `PH2_train_balanced.csv`, `PH2_validation.csv`, `PH2_test.csv`
 - **HAM10000**
-  - images_root: `/datasets/ham10000/2/`
+  - images_root: `/datasets/ham10000/`
   - CSVs: `all_balanced.csv`, `train_balanced.csv`, `validation.csv`, `test.csv`
 - **Derm7pt (7pt)**
   - images_root: `/datasets/release_v0/images`
@@ -107,8 +107,7 @@ Datasets and transforms are defined in `config.py`. Adjust paths if your data li
   - images_root: `/datasets/imagenet`
   - CSVs: `nmf.csv`, `train.csv`, `val.csv`, `test.csv`
 
-
-Make sure that the images_root matches the dataset root when you unzip the dataset folder.
+Please ensure that all downloaded datasets are placed in the designated directory before running the code, and the images_root matches the dataset root.
 
 ### Transforms
 - Medical sets (`ph2`, `ham10000`, `derm7pt`): same nmf/train transform (resize→center crop→90° rotate→flip) + eval transform (resize→center crop).
