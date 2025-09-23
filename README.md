@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 - `datasets` — stores the available datasets, currently includes CSV files for train, test, validation, and nmf splits.
 - `concept_graph_data` — currently stores the trained GAT model and the fitted CRAFT NMF components (enough for directly running explain_image.py). Graph datasets need to be created from the dataset splits.
-- `results` — stores the outputs from multiple runs.
+- `results` — stores `train_/val_/test_{acc,f1,auc}_{mean,std}` results for **ph2**, **ham10000**, **7pt**, **imagenet** from multiple runs.
 
 - For more details about the contents of these folders, please refer to the **Outputs** section below in  
   1. *Build Concept Basis & Graphs* and  
@@ -145,7 +145,7 @@ python build_concept_graphs.py \
 
 ### Outputs (inside `--output-root/<dataset>/`)
 
-Structure of the output folder is as follows. The default `--output-root` is set to `/concept_graph_data` (see `config.py`):
+The structure of the output folder is as follows. The default `--output-root` is set to `/concept_graph_data` (see `config.py`):
 
 - `craft/<dataset>/craft_<dataset>.dill` — **lightweight Craft** (heavy torch parts detached)
 - `U_meta/nmf_best_k.json` with `{best_k, patch_size, stride_r}`
